@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  /* Hide elements with print:hidden class */
+  .print\:hidden {
+    @apply hidden;
+  }
+
+  /* Ensure the invoice takes up the full width of the printed page */
+  main {
+    @apply w-full max-w-full bg-white;
+  }
+
+  /* Remove shadows for a cleaner print look */
+  .shadow-md {
+    @apply shadow-none;
+  }
+
+  /* Set a clean white background for print */
+  .bg-slate-200 {
+    @apply bg-white;
+  }
+
+  /* Adjust font size for print */
+  * {
+    font-size: 12pt; /* Adjust as necessary */
+  }
+}
