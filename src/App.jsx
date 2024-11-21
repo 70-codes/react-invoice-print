@@ -27,8 +27,6 @@ export default function App() {
     window.print();
   };
 
-  const handleChange = () => {};
-
   return (
     <>
       <div className="max-w-4xl mx-auto p-4 print:hidden">
@@ -156,7 +154,7 @@ export default function App() {
                     name="bankName"
                     id="bankName"
                     value={bankName}
-                    placeholder="enter your Bank Name"
+                    placeholder="Enter your Bank Name"
                     onChange={(e) => setBankName(e.target.value)}
                   />
                 </div>
@@ -168,7 +166,7 @@ export default function App() {
                     name="bankAccount"
                     id="bankAccount"
                     value={bankAccount}
-                    placeholder="enter your Bank A/C number"
+                    placeholder="Enter your Bank A/C number"
                     onChange={(e) => setBankAccount(e.target.value)}
                   />
                 </div>
@@ -182,7 +180,7 @@ export default function App() {
                     name="clientName"
                     id="clientName"
                     value={clientName}
-                    placeholder="enter client's name "
+                    placeholder="Enter client's name "
                     onChange={(e) => setClientName(e.target.value)}
                   />
                 </div>
@@ -194,7 +192,7 @@ export default function App() {
                     name="clientAdress"
                     id="clientAdress"
                     value={clientAdress}
-                    placeholder="enter client's adress "
+                    placeholder="Enter client's adress "
                     onChange={(e) => setClientAdress(e.target.value)}
                   />
                 </div>
@@ -209,7 +207,7 @@ export default function App() {
                     name="invoiceDate"
                     id="invoiceDate"
                     value={invoiceDate}
-                    placeholder="enter client's date "
+                    placeholder="Enter client's date "
                     onChange={(e) => setInvoiceDate(e.target.value)}
                   />
                 </div>
@@ -221,7 +219,7 @@ export default function App() {
                     name="dueDate"
                     id="dueDate"
                     value={dueDate}
-                    placeholder="enter client's date "
+                    placeholder="Enter client's date "
                     onChange={(e) => setDueDate(e.target.value)}
                   />
                 </div>
@@ -233,7 +231,7 @@ export default function App() {
                 name="invoiceNumber"
                 id="invoiceNumber"
                 value={invoiceNumber}
-                placeholder="enter client's adress "
+                placeholder="Enter Invoice Number "
                 onChange={(e) => setInvoiceNumber(e.target.value)}
               />
               <label htmlFor="name">Additional Notes</label>
